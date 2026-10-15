@@ -1,12 +1,13 @@
 site_name: WritersAdda
-site_description: API, developer, and AI documentation portfolio
-site_url: https://YOUR-USERNAME.github.io/technical-writing-portfolio/
-repo_url: https://github.com/YOUR-USERNAME/technical-writing-portfolio
+site_description: Founder-led technical documentation for software, API, and AI product teams.
+site_url: https://writersadda24.github.io/writersadda/
+repo_url: https://github.com/writersadda24/writersadda
 repo_name: Portfolio source
 nav:
   - Home: index.md
   - About: about.md
   - Services: services.md
+  - Process: process.md
   - Portfolio:
       - API Documentation: projects/api-documentation.md
       - Installation Guide: projects/installation-guide.md
@@ -19,10 +20,31 @@ theme:
     - navigation.top
     - content.code.copy
   palette:
-    primary: indigo
-    accent: blue
+    - scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  font:
+    text: Manrope
+    code: JetBrains Mono
+  icon:
+    logo: material/book-open-page-variant
+extra_css:
+  - stylesheets/extra.css
+extra:
+  generator: false
 markdown_extensions:
   - admonition
   - tables
+  - attr_list
+  - md_in_html
   - pymdownx.superfences
   - pymdownx.highlight
