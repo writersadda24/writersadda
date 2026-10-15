@@ -2,6 +2,12 @@
 
 Practical writing and content support for software and technology teams. We can take on a defined deliverable or help you identify the highest-value place to begin.
 
+## Start with a focused review
+
+If you are not sure what to commission, begin with a **Documentation Clarity Review** for one key user journey. We review the relevant content and, where access permits, follow the documented task. You receive prioritized observations, open questions for your product team, and practical options for next steps. The scope and fee are agreed before the review starts.
+
+This is a proposed starting engagement, not a fixed-price package. [Discuss a review](contact.md).
+
 ## API and developer documentation
 
 Help developers understand your product and integrate with confidence.
@@ -34,7 +40,7 @@ Improve the way your content is organized, reviewed, and maintained.
 
 ## How engagements work
 
-We agree on the audience, scope, access, reviewers, and deliverables before writing begins. Work can be scoped as an audit, a single guide, or a small documentation sprint. Availability and timelines are confirmed during the initial conversation.
+We agree on the audience, scope, access, reviewers, deliverables, review rounds, and completion criteria before writing begins. Work can be scoped as an audit, a single guide, or a small documentation sprint. Availability and timelines are confirmed during the initial conversation.
 
 ## What we need from you
 

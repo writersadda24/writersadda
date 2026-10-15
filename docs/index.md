@@ -1,70 +1,88 @@
-# Documentation that helps people move forward
+<section class="home-hero" markdown>
 
-WritersAdda helps technology teams turn complex products into clear, usable documentation. From API references and developer onboarding to AI product guides, we make it easier for customers to get started and for teams to support what they build.
+# Make your complex product easier to use.
 
-[Discuss your documentation project](contact.md){ .md-button .md-button--primary }
-[Explore selected work](#selected-work){ .md-button }
+WritersAdda turns product knowledge into clear, useful documentation for software, APIs, and AI-enabled products. Give customers a smoother path to value and give your engineering team content they can review and maintain.
 
-**Founder-led · 10 years of technical writing experience · Docs-as-code minded**
+[Discuss a project](contact.md){ .md-button .md-button--primary }
+[Explore work samples](#selected-work){ .md-button }
 
-## Clear docs. Less friction.
+**Founder-led · 10 years of technical writing experience · Docs-as-code ready**
 
-When product knowledge is scattered across code, tickets, and subject-matter experts, users get stuck and engineering teams repeat themselves. We bring structure to that knowledge and shape it into documentation people can act on.
+</section>
+
+## Useful documentation solves real product friction
+
+When users cannot find an answer, they lose time and your team gets pulled into repeat explanations. We organize product knowledge around the tasks people need to complete, then work with your experts to make the details accurate.
 
 <div class="grid cards" markdown>
 
--   :material-api: **Help developers integrate**
+-   :material-api: **API and developer docs**
 
-    API references, authentication guides, SDK documentation, and practical examples.
+    Help developers integrate with endpoint references, authentication guidance, SDK content, and tested examples.
 
--   :material-rocket-launch-outline: **Get users to value sooner**
+    [Explore API documentation](services.md#api-and-developer-documentation)
 
-    Quickstarts, installation guides, configuration instructions, and troubleshooting.
+-   :material-rocket-launch-outline: **Product onboarding**
 
--   :material-brain: **Explain AI products clearly**
+    Guide users through setup, configuration, common workflows, and troubleshooting.
 
-    RAG workflows, data ingestion, model integrations, and system concepts in plain language.
+    [Explore product documentation](services.md#product-and-ai-documentation)
 
--   :material-file-document-check-outline: **Make content easier to maintain**
+-   :material-brain: **AI and RAG documentation**
 
-    Information architecture, Markdown workflows, review practices, and documentation audits.
+    Explain data flows, retrieval behavior, model interactions, evaluation, and product limitations.
+
+    [View the RAG sample](projects/rag-documentation.md)
+
+-   :material-file-document-check-outline: **Documentation audits**
+
+    Find gaps and content friction, then turn findings into a prioritized, actionable backlog.
+
+    [Explore audits and content systems](services.md#documentation-systems-and-audits)
 
 </div>
 
-## Selected work
+## Selected work { #selected-work }
 
-These portfolio pieces are self-directed demonstrations, not client engagements. They show how WritersAdda approaches structure, clarity, and technical detail. Each sample states its current validation status.
+These self-directed samples show how WritersAdda approaches structure, examples, and reader guidance. They are not client projects. Fictional product behavior and untested examples are labeled in the samples.
 
 <div class="grid cards" markdown>
 
--   **REST API documentation**
+-   **REST API reference**
 
-    A sample reference for a fictional task-management API, including endpoint structure and example requests.
+    Authentication, pagination, endpoint examples, and error guidance for a fictional task API.
 
-    [View the API sample](projects/api-documentation.md)
+    [Read the API sample](projects/api-documentation.md)
 
--   **Installation and troubleshooting**
+-   **Installation and troubleshooting guide**
 
-    A practical setup guide outline designed around a repeatable developer workflow.
+    A contributor guide for running and building this MkDocs site, including platform-specific commands.
 
-    [View the setup sample](projects/installation-guide.md)
+    [Read the setup sample](projects/installation-guide.md)
 
 -   **AI/RAG developer guide**
 
-    A conceptual walkthrough of ingestion, retrieval, and grounded answer generation.
+    An end-to-end conceptual guide to ingestion, retrieval, evaluation, access control, and limitations.
 
-    [View the AI/RAG sample](projects/rag-documentation.md)
+    [Read the RAG sample](projects/rag-documentation.md)
 
 </div>
 
-## A small, focused partner for your docs
+## A direct, collaborative way to get better docs
 
-You work directly with an experienced technical writer. We start with your users, product, and current content, then agree on a useful first deliverable and a review path with your subject-matter experts.
+You work directly with an experienced technical writer. We agree on the audience, deliverable, reviewers, and definition of done before drafting. Your subject-matter experts validate product behavior; we make the content clear, structured, and maintainable.
 
-[See how we work](process.md) · [Meet WritersAdda](about.md)
+[See the working process](process.md) · [Read common questions](faq.md)
 
-## Tell us what is getting in the way
+## Notes for documentation teams
 
-Whether you need a focused documentation sprint or help bringing order to an existing doc set, share the product, audience, and challenge. We’ll work out a sensible next step together.
+Practical articles on developer onboarding, AI product docs, and focused content improvements.
 
-[Start a conversation](contact.md){ .md-button .md-button--primary }
+[Browse WritersAdda insights](blog/index.md)
+
+## Have a documentation challenge?
+
+Share the product, the people who need the content, and the point where they get stuck. A short note is enough to start a conversation.
+
+[Tell us about your project](contact.md){ .md-button .md-button--primary }

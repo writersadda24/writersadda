@@ -17,9 +17,9 @@ Open http://127.0.0.1:8000/ in your browser. Stop the local server with Ctrl+C.
 1. Replace the email, LinkedIn, and GitHub placeholders in `docs/contact.md` with working business contact details.
 2. Confirm the GitHub repository and site URL in `mkdocs.yml` if the repository name or Pages URL changes.
 3. Add verified biography details and any additional experience claims you want to publish.
-4. Complete and test the portfolio samples before describing them as finished. Keep client work anonymized or get permission before publishing it.
+4. Replace illustrative behavior with verified product evidence before describing any example as production-tested. Keep client work anonymized or get permission before publishing it.
 
-The current portfolio pages are self-directed demonstrations. They are not client case studies, and illustrative API examples are labeled as such.
+The current portfolio pages are finished writing demonstrations, not client case studies. The API contract is fictional, and all examples state their validation limits.
 
 ## Build the site
 

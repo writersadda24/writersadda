@@ -1,0 +1,246 @@
+openapi: 3.1.0
+info:
+  title: Task API
+  version: 1.0.0
+  summary: Fictional task-management API for a WritersAdda documentation sample.
+  description: >-
+    This specification is a portfolio demonstration. It describes an illustrative
+    contract and does not connect to a running service.
+servers:
+  - url: https://api.example.test/v1
+    description: Reserved example domain; no service is hosted here.
+security:
+  - bearerAuth: []
+paths:
+  /tasks:
+    get:
+      operationId: listTasks
+      summary: List tasks
+      description: Returns tasks visible to the authenticated account, newest first.
+      parameters:
+        - name: limit
+          in: query
+          description: Maximum number of results.
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+        - name: cursor
+          in: query
+          description: Cursor returned by the previous response.
+          required: false
+          schema:
+            type: string
+        - name: completed
+          in: query
+          description: Filter tasks by completion state.
+          required: false
+          schema:
+            type: boolean
+      responses:
+        '200':
+          description: A page of tasks.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskPage'
+              example:
+                data:
+                  - id: tsk_1042
+                    title: Review release notes
+                    completed: false
+                next_cursor: null
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '429':
+          $ref: '#/components/responses/RateLimited'
+        '500':
+          $ref: '#/components/responses/ServerError'
+    post:
+      operationId: createTask
+      summary: Create a task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTask'
+            example:
+              title: Review release notes
+      responses:
+        '201':
+          description: The task was created.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+              example:
+                id: tsk_1043
+                title: Review release notes
+                completed: false
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '429':
+          $ref: '#/components/responses/RateLimited'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /tasks/{task_id}:
+    parameters:
+      - name: task_id
+        in: path
+        required: true
+        description: Task identifier.
+        schema:
+          type: string
+          pattern: '^tsk_[A-Za-z0-9]+$'
+        example: tsk_1042
+    get:
+      operationId: getTask
+      summary: Retrieve a task
+      responses:
+        '200':
+          description: The requested task.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+              example:
+                id: tsk_1042
+                title: Review release notes
+                completed: false
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/TaskNotFound'
+        '429':
+          $ref: '#/components/responses/RateLimited'
+        '500':
+          $ref: '#/components/responses/ServerError'
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+  schemas:
+    Task:
+      type: object
+      required: [id, title, completed]
+      properties:
+        id:
+          type: string
+          example: tsk_1042
+        title:
+          type: string
+          minLength: 1
+          maxLength: 200
+          example: Review release notes
+        completed:
+          type: boolean
+          example: false
+    TaskPage:
+      type: object
+      required: [data, next_cursor]
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Task'
+        next_cursor:
+          type: [string, 'null']
+          description: Cursor for the next page, or null when there are no more results.
+    CreateTask:
+      type: object
+      required: [title]
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 200
+          description: Whitespace is trimmed before validation.
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code:
+              type: string
+            message:
+              type: string
+            details:
+              type: array
+              items:
+                type: object
+                required: [field, issue]
+                properties:
+                  field:
+                    type: string
+                  issue:
+                    type: string
+  responses:
+    ValidationError:
+      description: A request field is missing or invalid.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error:
+              code: validation_error
+              message: The request could not be processed.
+              details:
+                - field: title
+                  issue: This field is required.
+    Unauthorized:
+      description: The bearer token is missing, invalid, or expired.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error:
+              code: unauthorized
+              message: A valid bearer token is required.
+    TaskNotFound:
+      description: The task does not exist or is not visible to this account.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error:
+              code: task_not_found
+              message: The requested task was not found.
+    RateLimited:
+      description: The request limit was reached. A Retry-After header may be provided.
+      headers:
+        Retry-After:
+          schema:
+            type: integer
+          description: Suggested wait time in seconds before retrying.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error:
+              code: rate_limited
+              message: Too many requests. Try again later.
+    ServerError:
+      description: The service encountered an unexpected error.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error:
+              code: server_error
+              message: An unexpected error occurred.

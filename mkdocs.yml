@@ -1,23 +1,35 @@
 site_name: WritersAdda
-site_description: Founder-led technical documentation for software, API, and AI product teams.
+site_description: Founder-led API, developer, and AI product documentation for teams that need clear, maintainable docs.
 site_url: https://writersadda24.github.io/writersadda/
 repo_url: https://github.com/writersadda24/writersadda
-repo_name: Portfolio source
+repo_name: WritersAdda on GitHub
 nav:
   - Home: index.md
-  - About: about.md
   - Services: services.md
-  - Process: process.md
-  - Portfolio:
+  - Work:
       - API Documentation: projects/api-documentation.md
       - Installation Guide: projects/installation-guide.md
       - AI/RAG Documentation: projects/rag-documentation.md
+  - How we work: process.md
+  - Insights:
+      - Overview: blog/index.md
+      - Developer quickstarts: blog/developer-quickstarts.md
+      - Documenting RAG apps: blog/documenting-rag-apps.md
+      - Documentation audits: blog/documentation-audit.md
+  - About: about.md
+  - FAQ: faq.md
   - Contact: contact.md
 theme:
   name: material
   features:
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.sections
     - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - toc.follow
     - content.code.copy
   palette:
     - scheme: default
@@ -32,11 +44,9 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to light mode
-  font:
-    text: Manrope
-    code: JetBrains Mono
-  icon:
-    logo: material/book-open-page-variant
+  font: false
+  logo: assets/writersadda-mark.svg
+  favicon: assets/favicon.svg
 extra_css:
   - stylesheets/extra.css
 extra:
@@ -46,5 +56,8 @@ markdown_extensions:
   - tables
   - attr_list
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences
   - pymdownx.highlight

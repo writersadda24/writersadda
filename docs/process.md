@@ -8,7 +8,7 @@ We discuss the product, reader, current documentation, and the problem you want 
 
 ## 2. Agree on scope
 
-We define what is included, what is out of scope, the source format, review milestones, and how success will be judged. This keeps a project manageable and makes responsibilities clear.
+We define what is included, what is out of scope, the source format, review milestones, review rounds, completion criteria, and who is responsible for each input. We also agree on access and how success will be judged.
 
 ## 3. Research and outline
 
@@ -20,7 +20,7 @@ We write for the reader's tasks and mark questions or assumptions for review. Yo
 
 ## 5. Deliver and hand over
 
-We deliver in the agreed format with notes on unresolved issues and suggested maintenance. For docs-as-code work, this can include Markdown source and a pull request workflow, depending on your tools.
+We deliver in the agreed format with notes on unresolved issues and suggested maintenance. For docs-as-code work, this can include Markdown source and a pull request workflow, depending on your tools. The handoff includes the final source files and any agreed implementation notes.
 
 ## Quality checks
 

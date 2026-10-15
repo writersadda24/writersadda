@@ -2,7 +2,7 @@
 
 WritersAdda is a founder-led technical documentation studio for teams building software, APIs, and AI-enabled products. We make specialist product knowledge easier to understand, use, and keep current.
 
-The studio is built on **10 years of technical writing experience**. That experience informs a practical approach: learn the product, understand what readers need to do, and work closely with engineers and product experts to publish accurate content.
+The studio is built on **10 years of technical writing experience**. As a founder-led practice, WritersAdda gives clients a direct working relationship with the technical writer from scoping through handoff. The work starts with learning the product, understanding what readers need to do, and collaborating with engineers and product experts to publish accurate content.
 
 ## How we think about documentation
 
@@ -18,6 +18,6 @@ API and developer documentation, product onboarding, setup and troubleshooting, 
 
 ## A note on the portfolio
 
-The work currently published here consists of self-directed sample projects. They demonstrate writing approach and structure; they are not presented as client case studies or proof of production testing. As the portfolio grows, each project will include its scope, contribution, and validation details.
+The three projects published here are self-directed samples. Each page explains its scope and validation status. They demonstrate writing approach and structure; they are not client case studies or proof of production testing.
 
 [View services](services.md) · [Discuss a project](contact.md)
