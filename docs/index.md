@@ -1,33 +1,33 @@
 <section class="home-hero" markdown>
 
-# Make your complex product easier to use.
+# Make complex products and processes easier to use.
 
-WritersAdda turns product knowledge into clear, useful documentation for software, APIs, and AI-enabled products. Give customers a smoother path to value and give your engineering team content they can review and maintain.
+WritersAdda turns complex product and process knowledge into clear, useful documentation. From software and APIs to product guides, procedures, and AI-enabled systems, give readers a clearer path to the work they need to do.
 
 [Discuss a project](contact.md){ .md-button .md-button--primary }
 [Explore work samples](#selected-work){ .md-button }
 
-**Founder-led · 10 years of technical writing experience · Docs-as-code ready**
+**Founder-led · 10 years of technical writing experience · Built around your product, readers, and workflow**
 
 </section>
 
-## Useful documentation solves real product friction
+## Documentation for products, people, and processes
 
 When users cannot find an answer, they lose time and your team gets pulled into repeat explanations. We organize product knowledge around the tasks people need to complete, then work with your experts to make the details accurate.
 
 <div class="grid cards" markdown>
 
--   :material-api: **API and developer docs**
+-   :material-api: **Software and developer docs**
 
-    Help developers integrate with endpoint references, authentication guidance, SDK content, and tested examples.
+    Help developers integrate with API references, authentication guidance, SDK content, and practical examples.
 
     [Explore API documentation](services.md#api-and-developer-documentation)
 
--   :material-rocket-launch-outline: **Product onboarding**
+-   :material-book-open-variant: **Product and equipment guides**
 
-    Guide users through setup, configuration, common workflows, and troubleshooting.
+    Guide users, administrators, installers, and service teams through setup, operation, maintenance, and troubleshooting.
 
-    [Explore product documentation](services.md#product-and-ai-documentation)
+    [Explore product documentation](services.md#product-and-user-documentation)
 
 -   :material-brain: **AI and RAG documentation**
 
@@ -35,17 +35,23 @@ When users cannot find an answer, they lose time and your team gets pulled into 
 
     [View the RAG sample](projects/rag-documentation.md)
 
--   :material-file-document-check-outline: **Documentation audits**
+-   :material-file-document-check-outline: **Procedures and content systems**
 
-    Find gaps and content friction, then turn findings into a prioritized, actionable backlog.
+    Shape SOPs, operational content, audits, information architecture, and publishing workflows around real ownership needs.
 
-    [Explore audits and content systems](services.md#documentation-systems-and-audits)
+    [Explore procedures and content systems](services.md#operational-documentation-and-content-systems)
 
 </div>
 
+## Explore the full technical-writing landscape
+
+The field reaches beyond one industry or platform: it includes many content types, authoring approaches, technical skills, and business use cases. Our **Technical Writing Field Guide** maps those dimensions with practical examples and makes it clear where general field coverage differs from verified project experience.
+
+[Explore industries, deliverables, tools, skills, workflows, and business value](field-guide/index.md){ .md-button }
+
 ## Selected work { #selected-work }
 
-These self-directed samples show how WritersAdda approaches structure, examples, and reader guidance. They are not client projects. Fictional product behavior and untested examples are labeled in the samples.
+These self-directed samples show how WritersAdda approaches structure, examples, and reader guidance. They are not client projects. The current portfolio demonstrates software, API, and AI/RAG documentation; fictional product behavior and validation limits are labeled in each sample.
 
 <div class="grid cards" markdown>
 

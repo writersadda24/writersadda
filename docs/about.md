@@ -14,7 +14,7 @@ The studio is built on **10 years of technical writing experience**. As a founde
 
 ## Areas of focus
 
-API and developer documentation, product onboarding, setup and troubleshooting, AI/RAG product guides, and documentation audits.
+Current published work demonstrates API and developer documentation, software setup, and AI/RAG product guidance. WritersAdda also provides a broader field guide to documentation types, industries, tools, and workflows. That educational coverage should not be confused with a claim of hands-on experience in every area; new work is scoped against relevant experience and available subject-matter review.
 
 ## A note on the portfolio
 

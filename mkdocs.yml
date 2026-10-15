@@ -1,11 +1,19 @@
 site_name: WritersAdda
-site_description: Founder-led API, developer, and AI product documentation for teams that need clear, maintainable docs.
+site_description: Founder-led technical documentation for software, products, APIs, operations, and content systems, supported by a practical field guide.
 site_url: https://writersadda24.github.io/writersadda/
 repo_url: https://github.com/writersadda24/writersadda
 repo_name: WritersAdda on GitHub
 nav:
   - Home: index.md
   - Services: services.md
+  - Field guide:
+      - Overview: field-guide/index.md
+      - Industries: field-guide/industries.md
+      - Deliverables: field-guide/deliverables.md
+      - Tools: field-guide/tools.md
+      - Skills: field-guide/skills.md
+      - Workflows: field-guide/workflows.md
+      - Business value: field-guide/business-value.md
   - Work:
       - API Documentation: projects/api-documentation.md
       - Installation Guide: projects/installation-guide.md

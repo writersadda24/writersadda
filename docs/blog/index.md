@@ -21,3 +21,5 @@ The user-visible and operational details that make a retrieval-augmented generat
 A lightweight way to identify where readers get stuck, prioritize fixes, and turn an audit into a manageable backlog.
 
 These articles are educational guidance, not claims about client engagements. [Talk with WritersAdda about your documentation](../contact.md).
+
+For a wider map of the profession, explore the [Technical Writing Field Guide](../field-guide/index.md).
