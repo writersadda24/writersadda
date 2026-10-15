@@ -1,0 +1,28 @@
+site_name: WritersAdda
+site_description: API, developer, and AI documentation portfolio
+site_url: https://YOUR-USERNAME.github.io/technical-writing-portfolio/
+repo_url: https://github.com/YOUR-USERNAME/technical-writing-portfolio
+repo_name: Portfolio source
+nav:
+  - Home: index.md
+  - About: about.md
+  - Services: services.md
+  - Portfolio:
+      - API Documentation: projects/api-documentation.md
+      - Installation Guide: projects/installation-guide.md
+      - AI/RAG Documentation: projects/rag-documentation.md
+  - Contact: contact.md
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+  palette:
+    primary: indigo
+    accent: blue
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.superfences
+  - pymdownx.highlight
